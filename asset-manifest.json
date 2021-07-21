@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/Proekt/static/css/main.91de807b.chunk.css",
+    "main.js": "/Proekt/static/js/main.92dbc94e.chunk.js",
+    "main.js.map": "/Proekt/static/js/main.92dbc94e.chunk.js.map",
+    "runtime-main.js": "/Proekt/static/js/runtime-main.96dbac29.js",
+    "runtime-main.js.map": "/Proekt/static/js/runtime-main.96dbac29.js.map",
+    "static/css/2.ba8a8a05.chunk.css": "/Proekt/static/css/2.ba8a8a05.chunk.css",
+    "static/js/2.4ade4f21.chunk.js": "/Proekt/static/js/2.4ade4f21.chunk.js",
+    "static/js/2.4ade4f21.chunk.js.map": "/Proekt/static/js/2.4ade4f21.chunk.js.map",
+    "static/js/3.e3743de5.chunk.js": "/Proekt/static/js/3.e3743de5.chunk.js",
+    "static/js/3.e3743de5.chunk.js.map": "/Proekt/static/js/3.e3743de5.chunk.js.map",
+    "static/css/4.9185d803.chunk.css": "/Proekt/static/css/4.9185d803.chunk.css",
+    "static/js/4.8540b405.chunk.js": "/Proekt/static/js/4.8540b405.chunk.js",
+    "static/js/4.8540b405.chunk.js.map": "/Proekt/static/js/4.8540b405.chunk.js.map",
+    "static/css/5.cef43d6d.chunk.css": "/Proekt/static/css/5.cef43d6d.chunk.css",
+    "static/js/5.a138e236.chunk.js": "/Proekt/static/js/5.a138e236.chunk.js",
+    "static/js/5.a138e236.chunk.js.map": "/Proekt/static/js/5.a138e236.chunk.js.map",
+    "static/js/6.8e30e45b.chunk.js": "/Proekt/static/js/6.8e30e45b.chunk.js",
+    "static/js/6.8e30e45b.chunk.js.map": "/Proekt/static/js/6.8e30e45b.chunk.js.map",
+    "static/js/7.ec6d9b8c.chunk.js": "/Proekt/static/js/7.ec6d9b8c.chunk.js",
+    "static/js/7.ec6d9b8c.chunk.js.map": "/Proekt/static/js/7.ec6d9b8c.chunk.js.map",
+    "index.html": "/Proekt/index.html",
+    "static/css/2.ba8a8a05.chunk.css.map": "/Proekt/static/css/2.ba8a8a05.chunk.css.map",
+    "static/css/4.9185d803.chunk.css.map": "/Proekt/static/css/4.9185d803.chunk.css.map",
+    "static/css/5.cef43d6d.chunk.css.map": "/Proekt/static/css/5.cef43d6d.chunk.css.map",
+    "static/css/main.91de807b.chunk.css.map": "/Proekt/static/css/main.91de807b.chunk.css.map",
+    "static/js/2.4ade4f21.chunk.js.LICENSE.txt": "/Proekt/static/js/2.4ade4f21.chunk.js.LICENSE.txt",
+    "static/media/preloader.5788b05c.svg": "/Proekt/static/media/preloader.5788b05c.svg",
+    "static/media/user.png": "/Proekt/static/media/user.96e310a6.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.96dbac29.js",
+    "static/css/2.ba8a8a05.chunk.css",
+    "static/js/2.4ade4f21.chunk.js",
+    "static/css/main.91de807b.chunk.css",
+    "static/js/main.92dbc94e.chunk.js"
+  ]
+}
