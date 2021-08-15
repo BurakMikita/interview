@@ -34,7 +34,6 @@ export const  getUsersFilter  = (state:AppStateType)=>{
 }
 
 export const countSomethingDifficult = (state:AppStateType) => {
-    debugger
     //for... math... big arrays
     let count = 23;
     return count;

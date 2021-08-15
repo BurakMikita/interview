@@ -8,5 +8,20 @@
 
 .contact{
     padding-left: 10px;
-    color: bisque;
+    color: black;
+    padding-bottom: 5px;
+}
+.forma{
+    margin-bottom: 10px;
+}
+.forma div{
+    margin-bottom: 5px;
+}
+
+.button {
+    background-color: #4986cc;
+    padding:0  10px 0 10px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+
 }

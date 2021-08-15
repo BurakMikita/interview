@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import './App.css';
-import {BrowserRouter, Link, NavLink, Redirect, Route, Switch, withRouter} from "react-router-dom";
+import {HashRouter, Link, NavLink, Redirect, Route, Switch, withRouter} from "react-router-dom";
 import {UsersPage} from "./components/Users/UsersContainer";
 import LoginPage from "./components/Login/Login";
 import {connect, Provider} from "react-redux";
@@ -83,20 +83,11 @@ class App extends Component<MapPropsType & DispatchPropsType> {
                                     <Menu.Item key="1"><Link to="/profile" >Profile</Link></Menu.Item>
                                     <Menu.Item key="2"><Link to='/dialogs' >Messages</Link></Menu.Item>
                                     <Menu.Item key="3"><Link to='/chat' >Chat</Link></Menu.Item>
-                                    <Menu.Item key="4">option4</Menu.Item>
                                 </SubMenu>
                                 <SubMenu key="sub2" icon={<LaptopOutlined />} title="Users">
                                     <Menu.Item key="5"><Link to="/users" >Users</Link></Menu.Item>
-                                    <Menu.Item key="6">option6</Menu.Item>
-                                    <Menu.Item key="7">option7</Menu.Item>
-                                    <Menu.Item key="8">option8</Menu.Item>
                                 </SubMenu>
-                                <SubMenu key="sub3" icon={<NotificationOutlined />} title="subnav 3">
-                                    <Menu.Item key="9">option9</Menu.Item>
-                                    <Menu.Item key="10">option10</Menu.Item>
-                                    <Menu.Item key="11">option11</Menu.Item>
-                                    <Menu.Item key="12">option12</Menu.Item>
-                                </SubMenu>
+
                             </Menu>
                         </Sider>
                         <Content style={{ padding: '0 24px', minHeight: 280 }}><Switch>
@@ -128,33 +119,6 @@ class App extends Component<MapPropsType & DispatchPropsType> {
                 </Content>
                 <Footer style={{ textAlign: 'center' }}>Добро пожалоть 2021</Footer>
             </Layout>
-            // <div className='app-wrapper'>
-            //     <HeaderContainer/>
-            //     <Navbar/>
-            //     <div className='app-wrapper-content'>
-            //         <Switch>
-            //             <Route exact path='/'
-            //                    render={() => <Redirect to={"/profile"}/>}/>
-            //
-            //             <Route path='/dialogs'
-            //                    render={() => <SuspendedDialogs /> }/>
-            //
-            //             <Route path='/profile/:userId?'
-            //                    render={() => <SuspendedProfile /> }/>
-            //
-            //             <Route path='/users'
-            //                    render={() => <UsersPage pageTitle={"Самураи"}/>}/>
-            //
-            //             <Route path='/login'
-            //                    render={() => <LoginPage/>}/>
-            //
-            //             <Route path='*'
-            //                    render={() => <div>404 NOT FOUND
-            //                    </div>}/>
-            //         </Switch>
-            //
-            //     </div>
-            // </div>
         )
     }
 }
@@ -169,11 +133,11 @@ let AppContainer = compose<React.ComponentType>(
     connect(mapStateToProps, {initializeApp,error}))(App);
 
 const SamuraiJSApp: React.FC = () => {
-    return <BrowserRouter>
+    return <HashRouter >
         <Provider store={store}>
             <AppContainer/>
         </Provider>
-    </BrowserRouter>
+    </HashRouter>
 }
 
 export default SamuraiJSApp;

@@ -7,16 +7,16 @@ import {useFormik} from "formik";
 
 
 
-const Dialogs= (props) => {
+const Dialogs= ({dialogsPage,sendMessage}) => {
 
-    let state = props.dialogsPage;
+    let state = dialogsPage;
 
     let dialogsElements = state.dialogs.map( d => <DialogItem name={d.name} key={d.id} id={d.id} />  );
     let messagesElements = state.messages.map( m => <Message message={m.message} key={m.id} /> );
 
 
     let onSendMessageClick = (values) => {
-        props.sendMessage(values);
+        sendMessage(values);
     }
 
 
@@ -39,14 +39,14 @@ const Dialogs= (props) => {
 
 
 
-const AddMesege = (props) => {
+const AddMesege = ({onSendMessageClick}) => {
 
     const initialValues = {
         textarea: ''
     }
 
     const onSubmit = (values) => {
-        props.onSendMessageClick(formik.values.textarea)
+        onSendMessageClick(formik.values.textarea)
     }
 
     const formik = useFormik({

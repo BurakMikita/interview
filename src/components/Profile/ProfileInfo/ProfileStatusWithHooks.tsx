@@ -12,6 +12,7 @@ const ProfileStatusWithHooks:React.FC<PropsTyp> = (props) => {
     useEffect( () => {
         setStatus(props.status);
     }, [props.status] );
+    debugger
 
     const activateEditMode = () => {
         setEditMode(true);

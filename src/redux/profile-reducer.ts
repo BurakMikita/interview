@@ -1,8 +1,5 @@
 import {PhotosType, PostType, ProfileType} from "../Types/types";
-import {ThunkAction} from "redux-thunk";
 import {AppStateType, BaseThunkType, InferActionsTypes} from "./redux-store";
-import {Dispatch} from "redux";
-import {usersAPI} from "../api/users-api";
 import {profileAPI} from "../api/profile-api";
 
 
@@ -100,7 +97,8 @@ export const savePhoto = (file:File):ThunkType => async (dispatch)=>{
 export const saveProfile = (profile:ProfileType):ThunkType => async (dispatch,getState)=>{
     const userId = getState().auth.userId;
     let data = await profileAPI.saveProfile(profile);
-    if (data.resultCode === 0) {
+	 debugger
+    if (data.data.resultCode === 0) {
         if (userId !=null){dispatch(getUserProfile(userId))}
         else {
             throw new Error("userId null")

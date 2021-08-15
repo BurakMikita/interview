@@ -3,8 +3,8 @@ import {instance, APIResponseType, resultCodesEnum, resultCodesForCapctha} from 
 
 type MeResponseDataType = {
     id:number
-        email:string
-        login:string
+    email:string
+    login:string
 
 }
 
